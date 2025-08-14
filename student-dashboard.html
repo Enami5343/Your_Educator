@@ -537,7 +537,7 @@
     <header>
         <div class="container header-container">
             <div class="logo">
-                <img src="C:\Users\Enami\Desktop\mywebsite\images\logo.jpg" alt="GetEducators">
+                <img src="C:\Your_Educator\images\logo.jpg" alt="GetEducators">
                 
             </div>
             <nav>
@@ -695,15 +695,50 @@
     </footer>
 
     <script>
-        // Mobile menu toggle
-        document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
-            document.getElementById('nav-menu').classList.toggle('show');
-        });
+document.addEventListener('DOMContentLoaded', () => {
+    const user = JSON.parse(sessionStorage.getItem('loggedInUser'));
+    const currentPageIsTutorDashboard = window.location.pathname.includes('tutor-dashboard.html');
 
-        // Profile click handler
-        document.querySelector('.profile-img').addEventListener('click', function() {
-            window.location.href = 'student-profile.html';
+    // Security Check: Is anyone logged in?
+    if (!user) {
+        alert('You must be logged in to view this page.');
+        window.location.href = 'login.html';
+        return;
+    }
+
+    // Role Check: Is the right type of user on the right dashboard?
+    if (currentPageIsTutorDashboard && user.userType !== 'tutor') {
+        alert('Access Denied. You are not a tutor.');
+        window.location.href = 'student-dashboard.html'; // Redirect student to their dashboard
+        return;
+    }
+    
+    if (!currentPageIsTutorDashboard && user.userType !== 'student') {
+        alert('Access Denied. You are not a student.');
+        window.location.href = 'tutor-dashboard.html'; // Redirect tutor to their dashboard
+        return;
+    }
+
+    // Personalize the page (You can expand this)
+    // For example, if you have an element <h2 id="welcome-message"></h2> in your dashboard
+    const welcomeMessage = document.getElementById('welcome-message');
+    if (welcomeMessage) {
+        welcomeMessage.textContent = `Welcome, ${user.firstName}!`;
+    }
+
+    // Logout functionality
+    const logoutBtn = document.querySelector('a[href="index.html"]'); // Find the logout link
+    if (logoutBtn) {
+        logoutBtn.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent default link behavior
+            sessionStorage.clear(); // Clear all session data
+            alert('You have been logged out.');
+            window.location.href = 'login.html'; // Redirect to login page
         });
-    </script>
+    }
+});
+</script>
+</body>
+</html>
 </body>
 </html>
