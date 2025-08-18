@@ -1,0 +1,97 @@
+{
+  "users": [
+    {
+      "id": "019a",
+      "firstName": "Sadia",
+      "lastName": "Sultana",
+      "email": "enami@gmail.com",
+      "password": "asAs123@",
+      "location": "Dhaka",
+      "userType": "tutor",
+      "qualification": "Bsc. in CSE",
+      "subjects": "Math",
+      "experience": "3-5"
+    },
+    {
+      "id": "8785",
+      "firstName": "Tanisha",
+      "lastName": "Ahmed",
+      "email": "tani@gmail.com",
+      "password": "asAs123@",
+      "location": "Dhaka",
+      "userType": "student",
+      "gradeLevel": "high",
+      "interestedSubjects": "MATH"
+    },
+    {
+      "id": "575c",
+      "firstName": "Farzana",
+      "lastName": "Prioty",
+      "email": "prioty@gmail.com",
+      "password": "12abc@qwrtA",
+      "location": "Dhaka",
+      "userType": "tutor",
+      "qualification": "CSE",
+      "subjects": "Science",
+      "experience": "0-1"
+    },
+    {
+      "id": "6f66",
+      "firstName": "tamanna",
+      "lastName": "tabashon",
+      "email": "taba@gmail.com",
+      "password": "12abc@qwrtA",
+      "location": "Dhaka",
+      "userType": "student",
+      "gradeLevel": "",
+      "interestedSubjects": "MATH"
+    },
+    {
+      "id": "4735",
+      "firstName": "Chayti",
+      "lastName": "Saha",
+      "email": "chaytisaha@gmail.com",
+      "password": "ChaytiShaha123@",
+      "location": "Dhaka",
+      "userType": "tutor",
+      "qualification": "MSc Computer Science",
+      "subjects": "Machine Learning,Deep Learning",
+      "experience": "3-5"
+    },
+    {
+      "id": "30b3",
+      "firstName": "Kamrujjaman",
+      "lastName": "Rifat",
+      "email": "rifat@gmail.com",
+      "password": "Rifat123@",
+      "location": "Dhaka",
+      "userType": "tutor",
+      "qualification": "MSc Computer Science",
+      "subjects": "Machine Learning,Deep Learning",
+      "experience": "3-5"
+    },
+    {
+      "id": "31b3",
+      "firstName": "Ashfi",
+      "lastName": "Khan",
+      "email": "ashfi@gmail.com",
+      "password": "ashfi123@A",
+      "location": "Dhaka",
+      "userType": "student",
+      "gradeLevel": "college",
+      "interestedSubjects": "machine learning"
+    },
+    {
+      "id": "5545",
+      "firstName": "Aklima",
+      "lastName": "Ahmed",
+      "email": "aklima@gmail.com",
+      "password": "ak123@ak123@A",
+      "location": "Gazipur",
+      "userType": "tutor",
+      "qualification": "Bsc. in CSE",
+      "subjects": "Math",
+      "experience": "1-3"
+    }
+  ]
+}
