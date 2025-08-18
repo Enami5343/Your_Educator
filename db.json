@@ -80,6 +80,18 @@
       "userType": "student",
       "gradeLevel": "college",
       "interestedSubjects": "machine learning"
+    },
+    {
+      "id": "5545",
+      "firstName": "Aklima",
+      "lastName": "Ahmed",
+      "email": "aklima@gmail.com",
+      "password": "ak123@ak123@A",
+      "location": "Gazipur",
+      "userType": "tutor",
+      "qualification": "Bsc. in CSE",
+      "subjects": "Math",
+      "experience": "1-3"
     }
   ]
 }
