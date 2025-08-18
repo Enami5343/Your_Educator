@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile :: Chayti Sahar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #4a6fa5;
+            --secondary-color: #166088;
+            --light-color: #f4f7f9;
+            --dark-color: #2c3e50;
+            --success-color: #27ae60;
+            --verified-color: #3498db;
+            --border-radius: 16px;
+            --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .profile-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            overflow: hidden;
+        }
+
+        /* --- PROFILE HEADER SECTION --- */
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            padding: 40px;
+            background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
+            color: white;
+        }
+
+        .profile-picture {
+            width: 200px;
+            height: 200px;
+            border-radius: var(--border-radius);
+            object-fit: cover;
+            border: 5px solid white;
+            flex-shrink: 0; /* Prevents image from shrinking */
+        }
+
+        .profile-info {
+            flex-grow: 1;
+        }
+        
+        .tutor-name {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin: 0 0 10px;
+        }
+        .tutor-name h1 {
+            font-size: 36px;
+            margin: 0;
+            color: white;
+        }
+        .verified-badge {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            font-size: 12px;
+            padding: 5px 10px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .profile-info .headline {
+            font-size: 18px;
+            margin: 0 0 20px;
+            opacity: 0.9;
+        }
+        
+        .stats-bar {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 25px;
+        }
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 15px;
+        }
+        .stat-item i {
+            font-size: 20px;
+            opacity: 0.8;
+        }
+        
+        /* --- MAIN CONTENT AREA --- */
+        .profile-content {
+            padding: 40px;
+        }
+        .content-section {
+            margin-bottom: 40px;
+        }
+        .content-section:last-child { margin-bottom: 0; }
+        
+        .section-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin: 0 0 25px 0;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        .content-section p {
+            line-height: 1.8;
+            color: #555;
+        }
+        
+        .subjects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .subject-card {
+            background: var(--light-color);
+            border-radius: var(--border-radius);
+            padding: 25px;
+            transition: var(--transition);
+            border: 1px solid #e0e0e0;
+        }
+        .subject-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+            border-color: var(--primary-color);
+        }
+        .subject-card h3 { margin: 0 0 10px; }
+        .subject-card .price {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin-top: 15px;
+        }
+        .subject-card .price span {
+            font-size: 14px;
+            font-weight: 400;
+            color: #777;
+        }
+        
+        @media (max-width: 900px) {
+            .profile-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .stats-bar, .tutor-name {
+                justify-content: center;
+            }
+        }
+        @media (max-width: 500px) {
+             .stats-bar {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="profile-container">
+        <header class="profile-header">
+            <img src="C:\Your_Educator\images\Chaytishahamam.jpg" alt="Chaytishahamam   " class="profile-picture">
+            <div class="profile-info">
+                <div class="tutor-name">
+                    <h1>Chayti Saha</h1>
+                    <span class="verified-badge"><i class="fas fa-check"></i> Verified</span>
+                </div>
+                <p class="headline">Machine Learning Tutor</p>
+                <div class="stats-bar">
+                    <div class="stat-item"><i class="fas fa-briefcase"></i> <strong>7+ Years</strong> Experience</div>
+                    <div class="stat-item"><i class="fas fa-map-marker-alt"></i> Dhanmondi, Dhaka</div>
+                </div>
+            </div>
+        </header>
+
+        <main class="profile-content">
+            <section class="content-section">
+                <h2 class="section-title">About Me</h2>
+                <p>
+                    I am Chayti Saha, a passionate Machine Learning Tutor and Lecturer in CSE, combining academic teaching with hands-on expertise in Python, Deep Learning, Neural Networks, and real-world AI research.
+                </p>
+            </section>
+            
+            <section class="content-section">
+                <h2 class="section-title">My Subjects</h2>
+                <div class="subjects-grid">
+                    <div class="subject-card">
+                        <h3>Machine Learning</h3>
+                        <p>Comprehensive preparation for all modules to achieve your knowledge.</p>
+                        <div class="price">৳5,000 <span>/month</span></div>
+                    </div>
+                    <div class="subject-card">
+                        <h3>Deep Learning</h3>
+                        <p>Comprehensive preparation for all modules to achieve your knowledge.</p>
+                        <div class="price">৳5,000 <span>/month</span></div>
+                    </div>
+                     <div class="subject-card">
+                        <h3>Python Language</h3>
+                        <p>Comprehensive preparation for all modules to achieve your knowledge.</p>
+                        <div class="price">৳3,000 <span>/month</span></div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="content-section">
+                <h2 class="section-title">My Qualifications</h2>
+                <ul>
+                    <li><strong>Master of Science (Engg.) in Computer Science and Engineering, Comilla University (2019-2020) with thesis securing second position</strong></li>
+                    <li><strong>Bachelor of Science (Engg.) in Computer Science and Engineering, Comilla University (2016-2029) securing first position</strong> </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
