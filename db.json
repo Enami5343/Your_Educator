@@ -92,6 +92,18 @@
       "qualification": "Bsc. in CSE",
       "subjects": "Math",
       "experience": "1-3"
+    },
+    {
+      "id": "c2b4",
+      "firstName": "Azmiri",
+      "lastName": "Ahmed",
+      "email": "azmi12@gmail.com",
+      "password": "qQ123@er",
+      "location": "Gazipur",
+      "userType": "tutor",
+      "qualification": "Bsc. in CSE",
+      "subjects": "Math",
+      "experience": "3-5"
     }
   ]
 }
