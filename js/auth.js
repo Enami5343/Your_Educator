@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const password = document.getElementById('password').value;
             const remember = document.getElementById('remember').checked;
             
-            // Here you would typically validate and send to your server
+            // Here I would typically validate and send to my server
             console.log('Login attempt:', { email, password, remember });
             
             // Simulate successful login
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 strengthText.textContent = 'Password strength';
                 
                 if (password.length > 0) {
-                    // Very simple strength check - in a real app you'd want something more sophisticated
+                    // Very simple strength check
                     let strength = 0;
                     
                     // Length check
