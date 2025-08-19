@@ -80,6 +80,29 @@
       "qualification": "Bsc. in CSE",
       "subjects": "Math",
       "experience": "3-5"
+    },
+    {
+      "id": "97f1",
+      "firstName": "Chayti",
+      "lastName": "Saha",
+      "email": "chayti@gmail.com",
+      "password": "Aa123@aa",
+      "location": "Gazipur",
+      "userType": "tutor",
+      "qualification": "Bsc. in CSE",
+      "subjects": "Math",
+      "experience": "3-5"
+    },
+    {
+      "id": "d511",
+      "firstName": "Sadia",
+      "lastName": "Sultana Enami",
+      "email": "enami@gmail.com",
+      "password": "Aa123@as",
+      "location": "Gazipur",
+      "userType": "student",
+      "gradeLevel": "college",
+      "interestedSubjects": "Machine Learning"
     }
   ]
 }
