@@ -1,18 +1,6 @@
 {
   "users": [
     {
-      "id": "019a",
-      "firstName": "Sadia",
-      "lastName": "Sultana",
-      "email": "enami@gmail.com",
-      "password": "asAs123@",
-      "location": "Dhaka",
-      "userType": "tutor",
-      "qualification": "Bsc. in CSE",
-      "subjects": "Math",
-      "experience": "3-5"
-    },
-    {
       "id": "8785",
       "firstName": "Tanisha",
       "lastName": "Ahmed",
@@ -45,18 +33,6 @@
       "userType": "student",
       "gradeLevel": "",
       "interestedSubjects": "MATH"
-    },
-    {
-      "id": "4735",
-      "firstName": "Chayti",
-      "lastName": "Saha",
-      "email": "chaytisaha@gmail.com",
-      "password": "ChaytiShaha123@",
-      "location": "Dhaka",
-      "userType": "tutor",
-      "qualification": "MSc Computer Science",
-      "subjects": "Machine Learning,Deep Learning",
-      "experience": "3-5"
     },
     {
       "id": "30b3",
