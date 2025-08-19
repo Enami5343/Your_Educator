@@ -80,6 +80,17 @@
       "qualification": "Bsc. in CSE",
       "subjects": "Math",
       "experience": "3-5"
+    },
+    {
+      "id": "2555",
+      "firstName": "kamrujjaman",
+      "lastName": "Rifat",
+      "email": "kam@gmail.com",
+      "password": "123Aa@as",
+      "location": "Savar",
+      "userType": "student",
+      "gradeLevel": "college",
+      "interestedSubjects": "Business Studies"
     }
   ]
 }
